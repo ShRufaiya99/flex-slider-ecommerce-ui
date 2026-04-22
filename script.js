@@ -7,6 +7,11 @@ console.log(img)
 img.forEach((img)=>{
    img.addEventListener("click",()=>{
     console.log(img.src);
+    window.scrollTo({
+        top:0,
+        left:0,
+        behavior:"smooth",
+    })
     imgbox.classList.remove("hidden");
     mainimg.src = img.src;
    });
